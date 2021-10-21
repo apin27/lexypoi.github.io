@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/pesanan.css">
+
+    <title>Lexy Shop</title>
+</head>
+<body>
+    <!--Navbar 2-->
+    <nav class=" navbar2 navbar navbar-expand-lg">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Produk.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pesanan.html">Pesanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kontak.html">Kontak</a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar 2-->
+
+    <!-- Beli -->
+    <section class=" buy container" id="Beli">
+        <div class="col">
+          <H3>
+            Beli
+          </H3>
+          <p>Tolong isi formulir dibawah ini.</p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <form name="kontak-pembeli">
+              <div class="mb-3">
+                <div class="alert alert-info alert-dismissible fade show d-none" role="alert">
+                  Pesanan anda telah kami terima.
+                  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <label for="Name" class="form-label">Nama</label>
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="nama">
+              </div>
+              <div class="mb-3">
+                <label for="Alamat" class="form-label">Alamat lengkap</label>
+                  <input type="text" class="form-control" id="Alamat" aria-describedby="Alamat" name="alamat">
+              </div>
+              <div class="mb-3">
+                <label for="Whastapp" class="form-label">Whatsapp</label>
+                  <input type="text" class="form-control" id="Whastapp" aria-describedby="Whastapp" name="whatsapp">
+                  <div class="form-text">
+                    Nomor Whatsapp harus diawali dengan kode nomor Negara (+62)
+                  </div>
+              </div>
+              <div class="col-2">
+               <div class="mb-3">
+                <label for="Jumlah" class="form-label">Jumlah</label>
+                  <input type="number" class="form-control" id="Jumlah" aria-describedby="Jumlah" name="jumlah">
+                </div>
+              </div>
+               <button type="submit" class="btn btn-primary btn-beli">Beli</button>
+
+               <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                  Loading...
+                </button>
+
+            </form>
+          </div>
+        </div>
+      </section>          
+    <!-- Beli -->
+    
+</body>
+</html>
